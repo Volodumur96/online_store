@@ -1,0 +1,37 @@
+
+.description{
+    max-width: 30%;
+    margin: 2%;
+}
+.product_cart{
+    margin-top: 2%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.product_cart table{
+    clear: both;
+    float: left;
+    margin: 2%;
+
+}
+#make_order{
+    float: right;
+    margin-top: 5%;
+}
+.picture{
+    display: inline-flex;
+}
+.picture img{
+    float: left;
+}
+.picture table{
+    float: left;
+}
+.delete{
+    float: right;
+    padding: 10px 10px;
+    display: block;
+    margin-bottom: 2%;
+    margin-top: -6%;
+}

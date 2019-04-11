@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart-Shop</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/product-card-style.css" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+
+    </head>
+    <body>
+
+        <!--product card-->
+        <div id="card_background">
+            <section class="product-cart">
+                <div class="product__photo">
+                    <div class="photo-container">
+                        <div id="img_card" class="photo-main">
+
+                        </div>
+                    </div>
+                </div>
+            <div class="product__info">
+                <span id="close_card"><i class="material-icons">cancel</i></span>
+                <div class="title" id="title_card"> </div>
+                <div class="price" id="price_card"> </div>
+                <div class="description">
+                    <h3 id="">Characteristics</h3>
+                    <table id="characteristics_table"></table>
+                </div>
+                <button class="buy--btn add-to-cart">ADD TO CART</button>
+            </div>
+            </section>
+        </div>
+     <!-- Shell -->
+        <div class="shell">
+        <!-- Header -->
+        <div id="header">
+            <h1 id="logo"><a href="/home"></a></h1>
+        <!-- Navigation -->
+            <nav id="nav-menu" class="menu">
+                <ol>
+                    <li id="li-home" class="menu-item"><a href="/home"><i class="material-icons">home</i></a></li>
+                    <li id="li-category" class="menu-item">
+                    <a href="#"><i class="material-icons">menu</i></a>
+                        <ol class="sub-menu">
+                            <li class="menu-item" ><i class="material-icons">laptop</i><a id="laptop_page" href="#">Laptops</a></li>
+                            <li class="menu-item"><i class="material-icons">phone_iphone</i><a id="phones_page" href="#">Phones</a></li>
+                            <li class="menu-item"><i class="material-icons">tablet_mac</i><a id="tablets_page" href="#">Tablets</a></li>
+                            <li class="menu-item"><i class="material-icons">tv</i><a id="tv_page" href="#">TV</a></li>
+                        </ol>
+                    </li>
+                    <li id="li-contact" class="menu-item"><a href="#"><i class="material-icons">contact_phone</i></a></li>
+                    <li id="li-account" class="menu-item"><a href="/sing"><i class="material-icons">account_box</i></a></li>
+                    <li id="li-cart" class="menu-item"><a href="/cart"><i class="material-icons">shopping_cart</i></a></li>
+                </ol>
+            </nav>
+            <!-- End Navigation -->
+        </div>
+        <!-- End Header -->
+        <!-- Main -->
+        <div id="main">
+            <div class="cl">&nbsp;</div>
+            <!-- Content -->
+                <div id="content">
+                    <!-- Products -->
+                    <div class="products">
+                        <ul id="products-table"></ul>
+                    </div>
+                    <div id="pagination" class="pagination">
+                        <button id="prev-page"><i class="material-icons" id="prev-ico">keyboard_arrow_left</i></button>
+                        <output id="page-number"></output>
+                        <button id="next-page"><i class="material-icons">keyboard_arrow_right</i></button>
+                    </div>
+                 <!-- End Products -->
+                </div>
+                <!-- End Content -->
+                <!-- Sidebar -->
+                <div id="sidebar">
+                <!-- Search -->
+                <div class="box search">
+                        <h2>Search by <span></span></h2>
+                    <div class="box-content">
+                        <form action="#" method="post">
+                        <label>Model</label>
+                        <input id="search_model" type="text" class="field" />
+                        <label>Category</label>
+                        <select class="field" type="number" id="categoryId"></select>
+                    <div class="inline-field">
+                        <label>Price</label>
+                        <input id="search_price_from" class="field small-field" type="number">
+                        <label>to:</label>
+                        <input id="search_price_to" class="field small-field" type="number">
+                    </div>
+                        <butoon class="search-submit" id="search-filter">Search</butoon>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Search -->
+
+                <!-- Makers -->
+                <div class="box makers">
+                    <h2>Manufacturers <span></span></h2>
+                <div class="box-content">
+                    <ul id="makers-table"></ul>
+                </div>
+                    <butoon class="search-submit" id="searchByMakers">Search</butoon>
+                </div>
+                <!-- End Makers -->
+
+                <div class="box search">
+                    <h2>Advanced Search <span></span></h2>
+                <div class="box-content">
+                    <form action="#" method="post">
+                        <label>Name</label>
+                        <input id="search_name_adv" type="text" class="field" />
+                        <label>Model</label>
+                        <input id="search_model_adv" type="text" class="field" />
+                        <label>Category</label>
+                        <select class="field" type="number" id="categoryId_adv"></select>
+                        <label>Maker</label>
+                        <select class="field" type="number" id="makerId_adv"></select>
+                    <div class="inline-field">
+                        <label>Price</label>
+                        <input id="search_price_from_adv" class="field small-field" type="number">
+                        <label>to:</label>
+                        <input id="search_price_to_adv" class="field small-field" type="number">
+                        <label>Year</label>
+                        <input id="search_year_from_adv" class="field small-field" type="number">
+                        <label>to:</label>
+                        <input id="search_year_to_adv" class="field small-field" type="number">
+                    </div>
+                        <butoon class="search-submit" id="search_adv">Search</butoon>
+                    </form>
+                </div>
+                </div>
+                </div>
+                <!-- End Sidebar -->
+            <div class="cl">&nbsp;</div>
+        </div>
+        <!-- End Main -->
+        <!-- Footer -->
+        <div id="footer">
+            <p class="left"> <a href="main.html"><i class="material-icons">home</i></a>   <a href="#0"><i class="material-icons">contact_phone</i></a></p>
+            <div id="neon">
+                <div class="footer-neon">
+                    <div class="neon">SMART-</div>
+                    <div class="flux">-SHOP </div>
+                </div>
+            </div>
+            <p class="right"> &copy; 2019 </p>
+        </div>
+        <!-- End Footer -->
+        </div>
+        <!-- End Shell -->
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDVxHoghxcfXX2qo9f_t7yB9X5qMuSjTT8",
+                authDomain: "shop-30679.firebaseapp.com",
+                databaseURL: "https://shop-30679.firebaseio.com",
+                projectId: "shop-30679",
+                storageBucket: "shop-30679.appspot.com",
+                messagingSenderId: "441105846854"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

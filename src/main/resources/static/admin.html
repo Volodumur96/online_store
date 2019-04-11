@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Admin Page</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/admin.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Shell -->
+        <div class="shell">
+            <!-- Header -->
+            <div id="header"><h1 id="logo"><a href="/home"></a></h1></div>
+            <!-- End Header -->
+            <!-- Main -->
+            <div id="main">
+                <div class="cl">&nbsp;</div>
+                <!-- Content -->
+                <div id="content"><img src="https://firebasestorage.googleapis.com/v0/b/shop-30679.appspot.com/o/repair-shutterstock_133644224--photograph_848w477h.jpg?alt=media&token=2c2c02cd-e9fb-4b08-becc-3188f89fd853" alt=""></div>
+                <!-- End Content -->
+                 <!-- Sidebar -->
+                <div id="sidebar">
+                    <!-- Categories -->
+                    <div class="box categories">
+                        <div class="box-content">
+                            <ul>
+                                <a id="product_bt" href="#"><li>Products</li></a>
+                                <a id="maker_country" href="#"><li>Makers/Countries</li></a>
+                                <a id="cat_char" href="#"><li>Categories/Characteristic</li></a>
+                                <a id="characteristic_value" href="#0"><li>Characteristics Value</li></a>
+                                <a id="orders_btn" href="#"><li>Orders</li></a>
+                                <a id="user_bt" href="#"><li>Users</li></a>
+                                <a href="/home"><li>Home</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Categories -->
+                </div>
+                <!-- End Sidebar -->
+                <div class="cl">&nbsp;</div>
+            </div>
+            <!-- End Main -->
+              <!-- Footer -->
+            <div id="footer"></div>
+            <!-- End Footer -->
+        </div>
+        <!-- End Shell -->
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDVxHoghxcfXX2qo9f_t7yB9X5qMuSjTT8",
+                authDomain: "shop-30679.firebaseapp.com",
+                databaseURL: "https://shop-30679.firebaseio.com",
+                projectId: "shop-30679",
+                storageBucket: "shop-30679.appspot.com",
+                messagingSenderId: "441105846854"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="js/admin.js"></script>
+        <script src="js/maker_country.js"></script>
+        <script src="js/category.js"></script>
+        <script src="js/characteristic_value.js"></script>
+        <script src="js/user.js"></script>
+        <script src="js/upload.js"></script>
+        <script src="js/order.js"></script>
+    </body>
+</html>

@@ -1,0 +1,440 @@
+
+.content img{
+    position: relative;
+    line-height: 200px;
+
+}
+
+.box-content ul a {
+    text-decoration: none;
+}
+.box-content ul li  {
+    text-align: center;
+    text-decoration: none;
+    border-bottom: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 1px/1px;
+    margin-top: 15px;
+    position:sticky;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: -1px -1px #000;
+    user-select: none;
+    outline: none;
+    background-color: #000;
+    background-image: linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255,255,255,.7) 0%, rgba(255,255,255,.5) 50%, rgba(0,0,0,0) 50%);
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto;
+    background-position: 200% 0, 0 0;
+    box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+} 
+
+.box-content ul li:active {
+    margin-left: 5%;
+    margin-right: 5%;
+  box-shadow: none;
+}
+.box-content ul li:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0;
+}
+
+.input[type=text], select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input[type=number] {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#outText {
+    width: 100%;
+    padding: 6px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input[type=button] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.update[type=button] {
+    width: 20%;
+    background-color: orange;
+    color: white;
+    padding: 5px 7px;
+    margin-top: 2.4%;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    float: left;
+    display: none;
+    font-size: 16px;
+}
+
+.delete[type=button] {
+    width: 20%;
+    background-color: red;
+    color: white;
+    padding: 5px 7px;
+    margin-top: 2.4%;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+    display: none;
+    font-size: 16px;
+}
+
+.input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#details{
+    /*text-align: center;*/
+}
+#details select{
+    width: 30%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+table {
+    box-shadow: 5px 5px 5px grey;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgba(220,208,208,0.7);
+}
+
+.right {
+    width: 49%;
+    float: right;
+    margin: 0;
+}
+
+.left {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+
+#string  {
+    float: top;
+}
+
+#digital {
+    float: top;
+}
+
+#leftFooter {
+    float: bottom;
+    overflow: hidden;
+}
+
+
+#rightFooter {
+    float: bottom;
+    overflow: hidden;
+}
+.pagination_admin{float: right;
+    color: white;
+    margin-right: 0.4%;
+    font-size: 17px;
+}
+.pagination_admin button{
+    float: bottom;
+}
+
+table td, table th {
+    border: 1px solid red;
+    padding: 0.3%;
+    font-size: 13px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+.buttonDelete {
+    padding: 3px 32px;
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    transition-duration: 0.4s;
+    border-radius: 3px 3px;
+}
+.buttonDelete:hover {
+    background-color: red;
+    color: white;
+}
+
+.buttonUpdate {
+    padding: 3px 29.5px;
+    background-color: white;
+    color: black;
+    border: 2px solid orange;
+    transition-duration: 0.4s;
+    border-radius: 3px 3px;
+    margin-right: 10px;
+}
+
+.buttonUpdate:hover {background-color: orange; color: white;}
+
+
+.buttonCharacteristics {
+    padding: 3px 19px;
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    transition-duration: 0.4s;
+    border-radius: 3px 3px;
+    margin-right: 10px;
+}
+
+.buttonCharacteristics:hover {
+    background-color: green;
+    color: white;
+}
+
+.findId {
+    background-color: forestgreen;
+    float: right;
+    margin-right: 0.2%;
+    /*position: absolute;*/
+    margin-top: 0.4%;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 1px 1px;
+    border: none;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.find {
+    background-color: white;
+    float: right;
+    padding: 5px 1px;
+    margin: 0.4% 0;
+    font-size: 13px;
+    border-radius: 1px 1px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: text;
+    position: relative;
+
+}
+
+
+
+.openModal{
+    background-color: forestgreen;
+    border-radius: 1px 1px;
+    border: none;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0.4% 0.2%;
+    cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding-left: 29%;
+    padding-right: 29%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    bottom: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #fefefe;
+    width: 40%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 12px 16px;
+    background-color: black;
+    color: white;
+}
+
+.modal-footer {
+    padding: 12px 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.modal-header h2{
+    font-size: 16px;
+}
+
+.modal-footer h3 {
+    font-size: 16px;
+    color: white;
+}
+
+.modal-body {
+    padding: 8px 16px;
+}
+
+
+
+footer {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 5px 5px 5px grey;
+    background-color: black;
+    padding: 0.2%;
+}
+footer output{
+    color: white;
+    font-size: 16px;
+}
+
+.description_product{
+    position: fixed;
+    margin-left: 25%;
+    font-family: monospace;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#less_desc{
+    float: right;
+    margin: 1%;
+}
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+dialog {
+    margin-top: 5%;
+    -webkit-animation: appear 350ms ease-in 1;
+    animation: appear 350ms ease-in 1;
+    max-width: 400px;
+    overflow: paged-x;
+}
+
+.table_button button{
+    margin: 0;
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1;}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/sing.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+ 
+<div class="wrapper">
+  <div class="rec-prism">
+    
+    <div class="face face-front">
+      <div class="content">
+        <h2>Sign in</h2>
+        <form onsubmit="event.preventDefault()">
+          <div class="field-wrapper">
+            <input id="login_in" type="text" name="username" placeholder="e-mail">
+            <label>e-mail</label>
+          </div>
+          <div class="field-wrapper">
+            <input id="password_in" type="password" name="password" placeholder="password" autocomplete="new-password">
+            <label>password</label>
+          </div>
+          <div class="field-wrapper">
+            <button id="sing_in" type="button">Send</button>
+          </div>
+          <span class="signup" onclick="showSignup()">Not a user?  Sign up</span>
+        </form>
+      </div>
+    </div>
+   
+    <div class="face face-right">
+      <div class="content">
+        <p>Hello There!</p>
+        <p>Before using our services you need to create an account.</p>
+        <!--<h2>Sign up</h2>-->
+        <form onsubmit="event.preventDefault()">
+          <div class="field-wrapper">
+            <input id="name_up" type="text" name="name" placeholder="name">
+            <label>Name</label>
+          </div>
+           <div class="field-wrapper">
+            <input id="login_up" type="text" name="email" placeholder="email">
+            <label>e-mail</label>
+          </div>
+          <div class="field-wrapper">
+            <input id="password_up" type="password" name="password" placeholder="password" autocomplete="new-password">
+            <label>password</label>
+          </div>
+          <div class="field-wrapper">
+            <input type="password" name="password2" placeholder="password" autocomplete="new-password">
+            <label>re-enter password</label>
+          </div>
+          <div class="field-wrapper">
+            <button id="sing_up" type="button">Send</button>
+          </div>
+          <span class="singin" onclick="showLogin()">Already a user?  Sign in</span>
+        </form>
+      </div>
+    </div>
+   
+    <div class="face face-bottom">
+      <div class="content">
+        <div class="thank-you-msg">
+          Thank you!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+    <script  src="js/sing.js"></script>
+
+
+
+
+</body>
+
+</html>
