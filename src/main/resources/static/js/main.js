@@ -266,8 +266,8 @@ function setPoductCard() {
                 `);
 
                 $('#title_card').append(`
-                   <h1> ${data.name} ${data.model} </h1> 
-                   <h2>Manufacturer: ${data.maker.name} ${data.countryName}</h2>
+                   <h1> ${data.name} </h1> 
+                   <h2>Manufacturer: ${data.maker.name} (${data.countryName})</h2>
                 `);
 
 
