@@ -1,5 +1,5 @@
 
-let mainUrl = "http://localhost:8080";
+let mainUrl = "https://online-smart-shop.herokuapp.com";
 
 let category = [];
 let buttonNext = document.getElementById('next-page');

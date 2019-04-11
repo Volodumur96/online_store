@@ -7,7 +7,7 @@ if (window.localStorage.getItem('userRole') !== "ADMIN") {
 }
 
 
-let mainUrl = "http://localhost:8080";
+let mainUrl = "https://online-smart-shop.herokuapp.com";
 let products_page_number = 0;
 
 $('#product_bt').click(function () {

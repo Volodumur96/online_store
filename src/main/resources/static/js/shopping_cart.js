@@ -1,4 +1,4 @@
-let mainUrl = "http://localhost:8080";
+let mainUrl = "https://online-smart-shop.herokuapp.com";
 let order_for_product_list = [];
 
 
