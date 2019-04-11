@@ -8,7 +8,7 @@ public class HtmlPageController {
 
     @RequestMapping("/home")
     public String mainPage(){
-        return "main.html";
+        return "index.html";
     }
 
     @RequestMapping("/admin")
