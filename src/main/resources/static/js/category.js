@@ -88,7 +88,7 @@ $('#cat_char').click(function () {
 
 function setCategoryToModal() {
     $.ajax({
-        url: "http://localhost:8080/category/public/selector",
+        url: mainUrl + "/category/public/selector",
         type: "GET",
         contentType: "application/json",
 
