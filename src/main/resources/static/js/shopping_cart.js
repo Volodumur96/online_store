@@ -10,7 +10,6 @@ $(document).ready(function ($) {
         return;
     }
     setCart();
-    // makeOrder();
 });
 function setCart() {
     $.ajax({
@@ -68,7 +67,11 @@ function setCart() {
             }
 
 });
-            $('#cart').append(`<div id="make_order"><button id="make_order_btn">Make Order</button></div>`);
+
+            if (order_for_product_list.length > 0) {
+                $('#cart').append(`<div id="make_order"><button id="make_order_btn">Make Order</button></div>`);
+
+            }
             deleteOrder();
             makeOrder();
 
