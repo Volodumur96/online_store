@@ -357,73 +357,12 @@ h4 { font-size:12px; line-height:14px; text-transform: uppercase; color:#000; }
 
 
 
-#slider {
-  position: sticky;
-  overflow: hidden;
-  width: 100%;
-  margin: 0.2% 0.4% 0.4% 0.4%;  border-radius: 2px;
-  box-shadow: 5px 5px 5px grey;
-}
 
-#slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  background: #ccc;
-  text-align: center;
-}
-
-a.control_prev, a.control_next {
-  position: absolute;
-  top: 35%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
-  height: auto;
-  background: #2a2a2a;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-a.control_prev:hover, a.control_next:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
-}
-
-a.control_prev {
-  border-radius: 0 2px 2px 0;
-}
-
-a.control_next {
-  right: 0;
-  border-radius: 2px 0 0 2px;
-}
-
-.slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
-}
 
 .products {}
-.href_card {background-color: white; border: white; cursor: pointer; }
+.href_card {background-color: white; border: white; cursor: pointer; overflow: hidden; }
 .products ul{ list-style-type: none; margin-left: 5.5%;}
-.products ul li{ float:left; width:23.75%; margin: 0.4% 0.4% 0.4% 0.4%; height: 33%;  position: relative;}
+.products ul li{ float:left; width:200px; margin: 0.4% 0.4% 9% 0.4%; height: 303px;  position: relative;}
 .product-info{ position:absolute; width:130px; top:190px; left:-25px;
 }
 .product-info h3{ background: orangered; color:#fff; padding:6px 10px; overflow: hidden; border-radius: 4px;
