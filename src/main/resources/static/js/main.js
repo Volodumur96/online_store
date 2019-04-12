@@ -306,19 +306,19 @@ $('#laptop_page').click(function () {
 );
 
 $('#phones_page').click(function () {
-        category =[2];
+        category =[11];
         filter();
     }
 );
 
 $('#tablets_page').click(function () {
-        category =[3];
+        category =[21];
         filter();
     }
 );
 
 $('#tv_page').click(function () {
-        category =[4];
+        category =[31];
         filter();
     }
 );
