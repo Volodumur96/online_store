@@ -33,7 +33,7 @@ public class TokenAuthentificationFilter extends GenericFilterBean {
     @Value("${external.url.pattern.mainURL}")
     private String mainUrlPattern;
 
-    @Value("${external.static.html.pattern}")
+    @Value("${external.static.pattern}")
     private String index;
 
     @Value("${external.static.css.pattern}")
